@@ -1,0 +1,7 @@
+language: python
+python3:
+  - "3.7"
+install:
+  - pip install -r sobproject/requirements.txt
+script:
+  - SECRET_KEY="whatever" python3 sobproject/manage.py test
